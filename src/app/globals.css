@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f7f7f8;
+  --fg: #111827;
+  --card: #ffffff;
+  --card-fg: #111827;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --accent: #111827;
+  --accent-fg: #ffffff;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b0f14;
+  --fg: #e5e7eb;
+  --card: #121826;
+  --card-fg: #e5e7eb;
+  --border: #1f2937;
+  --muted: #9ca3af;
+  --accent: #e5e7eb;
+  --accent-fg: #0b0f14;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
