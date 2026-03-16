@@ -7,6 +7,15 @@ const nextConfig = {
     // Prefer worker_threads over child processes for type checking/linting.
     workerThreads: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/gallery',
+        permanent: false,
+      },
+    ]
+  },
   images: {
     remotePatterns: [
       {
